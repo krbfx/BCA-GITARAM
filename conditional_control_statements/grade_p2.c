@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <conio.h>
+#include<time.h>
 #include <stdlib.h>
+#include <unistd.h> 
 void main()
 {
     int n, i, j, temp, total = 0, arr[6], percent;
-    system("cls"); // clears the screen
-    printf("--Program for advanced grade--\n");
+    double time_spent = 0.0;
+    clock_t begin = clock();
+
+
+    //system("cls"); // clears the screen
+    printf("--Programme for advanced grade--\n");
     printf("Enter the number of subjects\n");
     scanf("%d", &n);
     printf("Enter The numbers of %d subjects\n", n);
@@ -47,5 +53,14 @@ void main()
     else
         printf("--The student's mark %d and he is fail--", total);
 
+sleep(3);
+ 
+    clock_t end = clock();
+ 
+    // calculate elapsed time by finding difference (end - begin) and
+    // dividing the difference by CLOCKS_PER_SEC to convert to seconds
+    time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
+ 
+    printf("\n[The elapsed time is %f seconds]", time_spent);
     getch();
 }
