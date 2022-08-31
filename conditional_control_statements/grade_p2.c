@@ -10,7 +10,7 @@ void main()
     clock_t begin = clock();
 
 
-    //system("cls"); // clears the screen
+    system("cls"); // clears the screen
     printf("--Programme for advanced grade--\n");
     printf("Enter the number of subjects\n");
     scanf("%d", &n);
