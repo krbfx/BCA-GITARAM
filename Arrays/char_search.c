@@ -2,21 +2,22 @@
 #include <conio.h>
 void main()
 {
-    char string[50], ser;
-    int limit, i, flag;
+    char array[50], ser;
+    int limit, i, flag=0;
 
     printf("Programme to find charecters in an Array \n");
     printf("How many charecters you want to enter?\n");
     scanf("%d", &limit);
+
     printf("Enter your Charecters\n");
     for (i = 0; i < limit; i++)
     {
-        scanf("%c", &string[i]);
+        scanf("%c", &array[i]);
     }
     printf("You have entered this charecters:\n");
     for (i = 0; i < limit; i++)
     {
-        printf("%c \n", string[i]);
+        printf("%c \n", array[i]);
     }
     printf("Press enter to confirm...\n");
     getch();
@@ -26,7 +27,7 @@ void main()
 
     for (i = 0; i < limit; i++)
     {
-        if (string[i] == ser)
+        if (array[i] == ser)
         {
             flag = 1;
         }
