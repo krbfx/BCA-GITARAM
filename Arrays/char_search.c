@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+
 void main()
 {
     char array[50], ser;
@@ -12,12 +13,12 @@ void main()
     printf("Enter your Charecters\n");
     for (i = 0; i < limit; i++)
     {
-        scanf("%c", &array[i]);
+        scanf("%c ", &array[i]);
     }
     printf("You have entered this charecters:\n");
     for (i = 0; i < limit; i++)
     {
-        printf("%c \n", array[i]);
+        printf("%c\n", array[i]);
     }
     printf("Press enter to confirm...\n");
     getch();
