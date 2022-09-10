@@ -11,9 +11,10 @@ void main()
     scanf("%d", &limit);
 
     printf("Enter your Charecters\n");
-    for (i = 0; i < limit; i++)
+    for (i=0; i<limit; i++)
     {
-        scanf("%c ", &array[i]);
+
+        scanf("%c",&array[i]);
     }
     printf("You have entered this charecters:\n");
     for (i = 0; i < limit; i++)

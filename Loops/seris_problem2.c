@@ -4,7 +4,7 @@
 void main()
 {
     int n,j,s=0;
-    printf("--Program to find out the result of s = 1-2+3-4+5-...n\n");
+    printf("--Program to find out the result of s = 1-2+3-4+5-...n--\n");
     printf("Enter a number\n");
     scanf("%d",&n);
 
