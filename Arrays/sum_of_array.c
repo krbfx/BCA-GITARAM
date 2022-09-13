@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-    int matrix[50][50],i,jc,sum=0,n,choice;
+    int matrix[50][50],i,j,c,sum=0,n,choice;
     printf("Programme to calculate sum of the diagonals of a matrix.\n");
     printf("Enter the value of n for a NxN matrix.\n");
     scanf("%d",&n);
