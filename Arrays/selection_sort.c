@@ -34,4 +34,5 @@ void main()
     {
         printf("%d ",list[i]);
     }
+    getch();
 }
