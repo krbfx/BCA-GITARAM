@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-    int list[50],limit,i,temp;
+    int list[50],limit,i,j,temp;
     printf("Program to sort an array using bubble sorting\n");
     printf("\nEnter how many numbers you want to input?\n");
     scanf("%d",&limit);
@@ -18,11 +18,14 @@ void main()
     }
     for(i=0;i<limit-1;i++)
     {
-        if(list[i]>list[i+1])
+        for(j=i+1;j<limit;j++)
         {
-            temp=list[i];
-            list[i]=list[i+1];
-            list[i+1]=temp;
+            if(list[i]>list[j])
+            {
+                temp=list[i];
+                list[i]=list[j];
+                list[j]=temp;
+            }
         }
     }
 
